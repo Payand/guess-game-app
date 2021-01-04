@@ -15,20 +15,41 @@
     margin: 0px 15px;
     opacity: 1;
     line-height: 21px;
+    animation-name: text-bold;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text-bold {
+    0% {
+        font-size: 18px;
+        opacity: 0.3;
+        color: black;
+    }
+    50% {
+        font-size: 20px;
+        opacity: 0.5;
+        color: red;
+    }
+    100% {
+        font-size: 25px;
+        opacity: 1;
+        color: yellowgreen;
+    }
 }
 
 img {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     opacity: 0;
     animation-name: construction;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 1s;
 }
 
 @keyframes construction {
     0% {
-        opacity: 0;
+        opacity: 0.1;
     }
     50% {
         opacity: 0.5;
@@ -44,12 +65,7 @@ img {
 
 h1 {
     text-transform: uppercase;
-}
-
-.text-setting:hover {
-    font-weight: 700;
-    font-size: 22px;
-    color: red;
+    font-size: 28px;
 }
 
 body {
@@ -61,4 +77,12 @@ body {
 
 .div1 {
     margin: 100px;
+}
+
+.div2 {
+    margin: -505px 0px 0px 500px;
+}
+
+.div3 {
+    margin: -400px 0px 0px 900px;
 }
