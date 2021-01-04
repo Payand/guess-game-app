@@ -52,7 +52,7 @@ h1 {
     color: red;
 }
 
-#body-design {
+body {
     background-image: url("CPU City.jpg");
     background-position: center;
     background-repeat: no-repeat;
