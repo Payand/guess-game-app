@@ -92,13 +92,17 @@ body {
     margin: -400px 0px 0px 900px;
 }
 
-nav {
-    color: aliceblue;
-    background-color: black;
-    padding-top: 10px;
+.ul-li {
+    background-color: yellow;
+    padding-top: 20px;
+    position: sticky;
 }
 
-ul {
+.lia {
+    text-decoration: none;
+    margin: 0px 0px 0px 10px;
+}
+
+.li-a {
     display: inline;
-    margin-left: 300px;
 }
