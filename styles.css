@@ -91,3 +91,14 @@ body {
 .div3 {
     margin: -400px 0px 0px 900px;
 }
+
+nav {
+    color: aliceblue;
+    background-color: black;
+    padding-top: 10px;
+}
+
+ul {
+    display: inline;
+    margin-left: 300px;
+}
