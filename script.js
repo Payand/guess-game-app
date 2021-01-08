@@ -65,4 +65,28 @@ console.log(firstName + " " + lastName);
 let x = 10 + 5; //15
 x += 10 // x = x + 10
 x *= 4
+x++
+x--
+
 console.log(x);
+
+console.log(ageAli > ageMina);
+console.log(ageMina >= 18);
+
+
+
+const weightMark = 78;
+const heightMark = 1.69;
+
+const weightJohn = 92;
+const heightJohn = 1.95;
+
+
+
+const markHeigherBMI = weightMark / heightMark ** 2;
+
+console.log(markHeigherBMI);
+
+const johnHeigherBMI = weightJohn / heightJohn ** 2;
+
+console.log(johnHeigherBMI);
