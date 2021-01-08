@@ -42,4 +42,16 @@ age = 32;
 
 // you cannot change the const variable
 const birthYear = 1989;
-birthYear = 1998;
+
+
+// basic operators
+// mathematical 
+
+const now = 2037;
+const ageAli = now - 1989;
+const ageMina = now - 2018;
+console.log(ageAli, ageMina);
+
+
+
+console.log(ageAli * 2, ageMina / 10, 2 ** 3);
