@@ -26,3 +26,20 @@ let population = "80/000/000 M";
 console.log(country);
 console.log(continent);
 console.log(population);
+
+
+
+let javascriptIsFun = true
+console.log(javascriptIsFun)
+javascriptIsFun = "yes!"
+console.log(typeof javascriptIsFun)
+
+
+
+let age = 31;
+age = 32;
+
+
+// you cannot change the const variable
+const birthYear = 1989;
+birthYear = 1998;
