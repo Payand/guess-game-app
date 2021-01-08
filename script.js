@@ -4,10 +4,10 @@ console.log(40 + 8 + 23 - 10);
 console.log("Ali");
 console.log("31");
 
-let firstName = "Pooneh";
-console.log(firstName);
-console.log(firstName);
-console.log(firstName);
+let myName = "Pooneh";
+console.log(myName);
+console.log(myName);
+console.log(myName);
 
 
 let myFirstJob = "Coder";
@@ -55,3 +55,13 @@ console.log(ageAli, ageMina);
 
 
 console.log(ageAli * 2, ageMina / 10, 2 ** 3);
+
+
+const firstName = "Ali";
+const lastName = "shooshtari";
+console.log(firstName + " " + lastName);
+
+
+let x = 10 + 5; //15
+x += 10 // x = x + 10
+console.log(x);
