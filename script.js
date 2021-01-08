@@ -85,8 +85,11 @@ const heightJohn = 1.95;
 
 const markHeigherBMI = weightMark / heightMark ** 2;
 
-console.log(markHeigherBMI);
+console.log("Mark body mass:" + " " + markHeigherBMI);
 
 const johnHeigherBMI = weightJohn / heightJohn ** 2;
 
-console.log(johnHeigherBMI);
+console.log("John body mass:" + " " + johnHeigherBMI);
+
+
+console.log(markHeigherBMI > johnHeigherBMI)
