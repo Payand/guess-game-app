@@ -150,7 +150,7 @@ let n = '1' + 1; // "11"
 n = n - 1;
 console.log(n);
 
-
+// falsy values : 0 , undefine, null , NaN,''
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean("Ali"));
@@ -169,11 +169,20 @@ if (money) {
     console.log("you sholud get a job");
 }
 
-let height;
+let height = 0;
 
 if (height) {
-    console.log('YaY! height is defined')
+    console.log('YaY! height is defined');
 
 } else {
-    console.log('height is undefined')
+    console.log('height is undefined');
 }
+
+
+
+const ageLast = "19";
+if (ageLast === 19) console.log("you just became an adult");
+
+
+
+if (ageLast === "19") console.log("you just became an adult");
