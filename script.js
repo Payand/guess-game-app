@@ -126,3 +126,16 @@ if (calculateBMIMark > calculateBMIJohn) {
     console.log(`John BMI is greater than Mark,John BMI is : ${calculateBMIJohn} and Mark BMI is (${calculateBMIJohn})`)
 
 }
+// type conversion
+const inputYear = "1989";
+console.log(Number(inputYear));
+console.log(inputYear + 10);
+
+
+
+console.log(String(31));
+
+// type coersion
+
+console.log("I am " + 31 + " years old")
+console.log('50' - '23' - 2)
