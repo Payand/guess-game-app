@@ -75,21 +75,54 @@ console.log(ageMina >= 18);
 
 
 
-const weightMark = 78;
+
+
+
+
+
+
+
+
+const job = "Hacker";
+const lifeGole = "white hat hacker";
+const lifeGoleSecond = "black hat hacker";
+
+const introLife = `I am a ${job} and going to be a ${lifeGole} and then I will be a ${lifeGoleSecond}`;
+
+
+console.log(introLife);
+
+
+
+
+const ageMy = 15;
+const ligalAge = 19;
+
+
+if (ageMy >= 19) {
+    console.log("Ali can drive a car");
+} else {
+    const yearLeft = ligalAge - ageMy;
+    console.log(`you are too young .you can get you licence in ${yearLeft} years`);
+}
+
+
+
+const weightMark = 100;
 const heightMark = 1.69;
 
 const weightJohn = 92;
 const heightJohn = 1.95;
 
 
+let calculateBMIMark = weightMark / heightMark ** 2
+let calculateBMIJohn = weightJohn / heightMark ** 2
 
-const markHeigherBMI = weightMark / heightMark ** 2;
-
-console.log("Mark body mass:" + " " + markHeigherBMI);
-
-const johnHeigherBMI = weightJohn / heightJohn ** 2;
-
-console.log("John body mass:" + " " + johnHeigherBMI);
+if (calculateBMIMark > calculateBMIJohn) {
+    console.log(`Mark BMI is greater than John, Mark BMI is : ${calculateBMIMark} and John BMI is : ${calculateBMIJohn}`)
 
 
-console.log(markHeigherBMI > johnHeigherBMI)
+} else {
+    console.log(`John BMI is greater than Mark,John BMI is : ${calculateBMIJohn} and Mark BMI is (${calculateBMIJohn})`)
+
+}
