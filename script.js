@@ -137,5 +137,15 @@ console.log(String(31));
 
 // type coersion
 
-console.log("I am " + 31 + " years old")
-console.log('50' - '23' - 2)
+console.log("I am " + 31 + " years old");
+console.log('50' - '23' - 2);
+console.log('100' * '12');
+console.log('100' / '12');
+console.log('10' ** '2');
+console.log('10' % '3');
+console.log('10' > '3');
+
+
+let n = '1' + 1; // "11"
+n = n - 1;
+console.log(n);
