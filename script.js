@@ -179,10 +179,110 @@ if (height) {
 }
 
 
-
+/*
 const ageLast = "19";
 if (ageLast === 19) console.log("you just became an adult");
 
 
 
 if (ageLast === "19") console.log("you just became an adult");
+
+const favorite = Number(prompt("what is your favorite number?"));
+
+
+console.log(favorite);
+console.log(typeof favorite);
+
+
+
+
+if (90 >= favorite && favorite >= 0) {
+    console.log(`coool ${favorite} is an amazing number!!!`);
+} else if (favorite < 0) {
+    console.log(`${favorite} is not an age number you can't be ${favorite}`);
+
+
+} else if (favorite >= 91) {
+    console.log("Dude you are really old!!!");
+
+} else {
+    console.log("you entered a string");
+
+}
+
+*/
+
+
+
+
+const hasDriverLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+
+const shouldDrive = hasDriverLicense && hasGoodVision
+
+if (shouldDrive) {
+    console.log("Sarah is able to drive!");
+
+} else {
+    console.log("someone else should drive.....")
+}
+
+
+
+const shouldDriveCar = hasDriverLicense || hasGoodVision
+
+if (shouldDriveCar) {
+    console.log("Sarah is able to drive!");
+
+} else {
+    console.log("someone else should drive.....")
+}
+
+
+
+const teamDolphines = (96 + 0 + 100) / 3;
+const teamKoalas = (96 + 100 + 0) / 3;
+console.log(teamDolphines);
+console.log(teamKoalas);
+
+
+
+if (teamDolphines >= 100 || teamKoalas >= 100) {
+    if (teamDolphines === teamKoalas) {
+        console.log("this is a draw")
+
+
+    } else if (teamKoalas >= 100 && teamDolphines < 100 || teamKoalas >= 100 && teamDolphines >= 100) {
+        if (teamKoalas > teamDolphines && teamDolphines < 100) {
+            console.log(`team Koalas wins the score is ${teamKoalas} \nteam Dolphines escor is under 100 ,team dolphines is disqualified`);
+
+        } else if (teamKoalas > teamDolphines && teamDolphines >= 100) {
+            console.log(`team Koalas wins the escore is ${teamKoalas}`);
+        }
+
+
+
+    } else if (teamDolphines >= 100 && teamKoalas < 100 || teamDolphines >= 100 && teamKoalas >= 100) {
+        if (teamDolphines > teamKoalas && teamKoalas < 100) {
+            console.log(`team Koalas wins the score is ${teamDolphines} n/ team Koalas is disqualified their score is less than 100`)
+        } else if (teamDolphines > teamKoalas && teamKoalas >= 100) {
+            console.log(`team dolphines win the score is ${teamDolphines}`)
+
+        }
+
+
+
+
+
+    }
+
+
+
+} else {
+    console.log("both are under 100 both lost")
+}
