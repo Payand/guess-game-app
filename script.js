@@ -316,3 +316,10 @@ switch (day) {
         console.log("not a valid day!")
         break;
 }
+
+const rAge = 23;
+rAge >= 18 ? console.log('I would like to drink wine') : console.log('so water');
+
+
+const gender = "male";
+gender === "female" ? console.log("you can buy what ever you want") : console.log("guys do not shop here!!!!!")
