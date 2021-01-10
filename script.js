@@ -323,3 +323,8 @@ rAge >= 18 ? console.log('I would like to drink wine') : console.log('so water')
 
 const gender = "female" === "male" ? 'can shop' : 'cannot shop ';
 console.log(gender);
+
+
+const genderChoise = "male"
+const secondGender = genderChoise === "female" ? 'this is a man cave no female' : 'this is not a man cave please come in '
+console.log(secondGender)
