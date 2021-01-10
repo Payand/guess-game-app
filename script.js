@@ -286,3 +286,33 @@ if (teamDolphines >= 100 || teamKoalas >= 100) {
 } else {
     console.log("both are under 100 both lost")
 }
+
+
+
+const day = "monday";
+
+
+switch (day) {
+    case 'monday': // day === monday
+        console.log("plan my course structure");
+        console.log("go to coding meetup");
+
+        break;
+    case "tuesday":
+        console.log("prepare theory videos");
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('write code examples');
+        break;
+    case "friday":
+        console.log('record videos');
+        break;
+    case "saturday":
+    case "sunday":
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log("not a valid day!")
+        break;
+}
