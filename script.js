@@ -328,3 +328,8 @@ console.log(gender);
 const genderChoise = "male"
 const secondGender = genderChoise === "female" ? 'this is a man cave no female' : 'this is not a man cave please come in '
 console.log(secondGender)
+
+const bill = 350;
+
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`the bill is ${bill} and the tip is ${tip} and total bill is ${bill + tip}`);
