@@ -1,2 +1,2 @@
-# js and Htmal
+# Java Script  first project 
 
