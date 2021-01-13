@@ -1,2 +1,2 @@
-# Java Script  first project 
+# JavaScript  first project 
 
