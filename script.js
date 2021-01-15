@@ -194,3 +194,33 @@ function typingSpeed(x) {
 
 
 console.log(typingSpeed(10));
+
+
+
+
+function firstNumber() {
+    prompt("please enter your first number: ");
+
+
+}
+
+
+
+
+
+function secondNumber() {
+    prompt("please rnter your second number: ");
+
+}
+
+
+
+
+
+
+function mulitNmbers() {
+    let multi = Number(firstNumber()) + Number(secondNumber());
+    console.log(multi);
+}
+
+mulitNmbers()
