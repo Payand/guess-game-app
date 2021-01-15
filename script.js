@@ -208,7 +208,7 @@ console.log(multiNum());
 
 */
 
-
+/*
 const firNum = function() {
     const numOne = Number(prompt("please enter your first number :"));
     return numOne
@@ -224,9 +224,71 @@ const secNum = function() {
 
 
 function multiNumberTwo() {
-    const thirdNum = firNum() + secNum();
+    const thirdNum = firNum() * secNum();
     return thirdNum
 }
 
 
 console.log(multiNumberTwo());
+
+*/
+
+
+/*
+
+function firstNmber() {
+    const firNum = Number(prompt('please enter your first number: '));
+    return firNum
+
+}
+
+function secNmbr() {
+    const seNum = Number(prompt('please enter your second number: '));
+    return seNum
+}
+
+
+function addNumber() {
+    const thNum = firstNmber() + secNmbr();
+    return thNum
+}
+
+
+console.log(addNumber());
+*/
+
+
+
+
+
+
+
+
+const randomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+
+};
+
+
+
+
+const guessNum = () => {
+    return Number(prompt('please enter your number between 10 to 30 : '));
+};
+
+
+
+
+
+const myGame = () => {
+    if (randomNumber === guessNum()) {
+        return "you guess right"
+
+    } else if (randomNumber > guessNum) {
+        return "you guess high"
+
+    } else {
+        return "you guess low"
+    }
+};
+console.log(myGame());
