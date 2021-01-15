@@ -171,3 +171,13 @@ console.log(Ali);
 const years = new Array(1991, 1989, 1990, 2020);
 
 console.log(years)
+
+
+
+
+
+
+const mySirName = "leo";
+
+
+console.log(mySirName);
