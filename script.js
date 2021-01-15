@@ -195,7 +195,7 @@ function typingSpeed(x) {
 
 console.log(typingSpeed(10));
 
-
+/*
 
 function multiNum() {
     const firstNum = Number(prompt("please enter your numbr :"));
@@ -204,5 +204,29 @@ function multiNum() {
     return multiTwo
 }
 
-
 console.log(multiNum());
+
+*/
+
+
+const firNum = function() {
+    const numOne = Number(prompt("please enter your first number :"));
+    return numOne
+
+}
+
+
+const secNum = function() {
+    const numtwo = Number(prompt("please enter your second number : "));
+    return numtwo
+}
+
+
+
+function multiNumberTwo() {
+    const thirdNum = firNum() + secNum();
+    return thirdNum
+}
+
+
+console.log(multiNumberTwo());
