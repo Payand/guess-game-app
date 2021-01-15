@@ -271,24 +271,23 @@ const randomNumber = (min, max) => {
 
 
 
-
-const guessNum = () => {
-    return Number(prompt('please enter your number between 10 to 30 : '));
+const guessNum = (myChoice) => {
+    return myChoice
 };
-
+const myChoice = Number(prompt('please enter your number between 10 to 30 : '));
 
 
 
 
 const myGame = () => {
-    if (randomNumber === guessNum()) {
+    if (randomNumber(10, 20) === guessNum(myChoice)) {
         return "you guess right"
 
-    } else if (randomNumber > guessNum) {
-        return "you guess high"
+    } else if (randomNumber(10, 20) > guessNum(myChoice)) {
+        return `you guess high ,computer choice is ${randomNumber(10,20)}`
 
     } else {
-        return "you guess low"
+        return `you guess low , computer choice is ${randomNumber(10,20)}`
     }
 };
 console.log(myGame());
