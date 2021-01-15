@@ -6,22 +6,21 @@ def random_number():
     return comp_number
 
 
-print(random_number())
+def my_guess(guess):
 
-
-def my_guess():
-    guess = int(input("enter your number between 0 to 20 :"))
     return guess
 
 
-print(my_guess())
+guess = int(input("enter your number between 0 to 20 :"))
 
 
 def game_rational():
-    if my_guess == random_number:
+    if my_guess(guess) == random_number():
         return "you guess right!!!"
+    elif my_guess(guess) > random_number():
+        return "you guess high " + str(random_number()) + " is computer choice"
     else:
-        return "you guess wrong"
+        return "you guess low " + str(random_number()) + " is computer choice"
 
 
 print(game_rational())
