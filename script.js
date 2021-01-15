@@ -181,3 +181,16 @@ const mySirName = "leo";
 
 
 console.log(mySirName);
+
+
+const y = 2.5;
+
+
+function typingSpeed(x) {
+
+    let z = y + x;
+    return z
+}
+
+
+console.log(typingSpeed(10));
