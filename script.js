@@ -145,22 +145,6 @@ const checkWinner = function(avgKoalas, avgDolphines) {
 checkWinner(scorKoalas, scorDolphines);
 
 
-// Array
-const friends = ['Micheal', 'Steven', 'Peter'];
-console.log(friends);
-
-console.log(friends[2]);
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
-
-console.log(friends[2]);
-
-friends[2] = 'Jay';
-console.log(friends);
-
-
-const Ali = ['Ali', 'Leo', 2037 - 2019];
-console.log(Ali);
 
 
 
@@ -168,9 +152,6 @@ console.log(Ali);
 
 
 
-const years = new Array(1991, 1989, 1990, 2020);
-
-console.log(years)
 
 
 
@@ -291,3 +272,41 @@ const myGame = () => {
     }
 };
 console.log(myGame());
+
+
+
+
+const friends = ['micheal', 'steven', 'peter'];
+
+
+console.log(friends);
+
+
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+
+
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends.length - 1);
+console.log(friends[friends.length - 1]);
+
+
+
+friends[2] = "Joey";
+console.log(friends);
+
+
+const ageCal = function(birthday) {
+    return 2021 - birthday;
+}
+
+const allYears = [1988, 1989, 1990, 1991];
+
+const age1 = ageCal(allYears[0]);
+const age2 = ageCal(allYears[1]);
+const age3 = ageCal(allYears[allYears.length - 1]);
+
+const age4 = [age1, age2, age3];
+console.log(age4);
