@@ -276,7 +276,7 @@ console.log(myGame());
 
 
 
-const friends = ['micheal', 'steven', 'peter'];
+let friends = ['micheal', 'steven', 'peter'];
 
 
 console.log(friends);
@@ -310,3 +310,39 @@ const age3 = ageCal(allYears[allYears.length - 1]);
 
 const age4 = [age1, age2, age3];
 console.log(age4);
+
+
+
+
+// methods in JS
+
+const friend = ['Joey', 'Racheal', 'Ross', 'monica'];
+// add elements
+const newLength = friend.push('pheebi');
+console.log(friend);
+console.log(newLength);
+friend.unshift('John'); // like insert method in python
+console.log(friend);
+// remove method
+
+friend.pop(); // Last
+friend.pop(1); // Last
+
+console.log(friend);
+
+
+friend.shift(); // First
+console.log(friend);
+
+
+console.log(friend.indexOf('Ross'));
+
+friend.push(23)
+console.log(friend.includes("Ross"));
+console.log(friend.includes("23"));
+console.log(friend)
+
+
+if (friend.includes('Joey')) {
+    console.log("you have a friend called Joey")
+}
