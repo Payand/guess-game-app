@@ -55,9 +55,9 @@ def age_calc():
 
 age_calc()
 
-# age = []
-# for year in years:
+age = []
+for year in years:
 
-#     hello = age_years(year)
-#     age.append(hello)
-#     print(list(age))
+    hello = age_years(year)
+    age.append(hello)
+    print(list(age))
