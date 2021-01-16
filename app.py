@@ -81,3 +81,18 @@ print(friends)
 indexross = friends.index("Ross")
 print(indexross)
 print("monica" in friends)
+
+
+ali = {
+    'fristname': 'Ali',
+    'lastname': 'Shooshtari',
+    'age': 2020 - 1989,
+    'job': 'Hacker',
+    'friends': ['Joey', 'Ross', 'Chandler']
+}
+print(ali)
+print(ali.keys())
+print(ali.values())
+print(ali.items())
+for x in ali.values():
+    print(x)
