@@ -360,3 +360,23 @@ const tipArray3 = clacTipTwo(bills[2]);
 
 tips.push(tipArray1 + bills[0], tipArray2 + bills[1], tipArray3 + bills[2]);
 console.log(tips);
+
+
+
+const ali = {
+    firstName: 'Ali',
+    lastName: 'Shooshtari',
+    age: 2020 - 1989,
+    job: "Haker",
+    friends: ['Joey', 'Ross', 'Chandler']
+};
+console.log(ali);
+console.log(ali.lastName);
+console.log(ali['lastName']);
+
+
+
+const nameKey = 'Name';
+
+console.log(ali['first' + nameKey]);
+console.log(ali['last' + nameKey]);
