@@ -61,3 +61,23 @@ for year in years:
     hello = age_years(year)
     age.append(hello)
     print(list(age))
+
+
+# methods in python
+friends = ['Joey', 'Racheal', 'Ross', 'monica']
+
+# add elemnets method
+
+friends.append('pheebi')
+print(friends)
+print(len(friends))
+friends.insert(0, 'mike')
+print(friends)
+
+
+# remove element method
+friends.pop()  # no index means last element removed
+print(friends)
+indexross = friends.index("Ross")
+print(indexross)
+print("monica" in friends)
