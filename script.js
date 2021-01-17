@@ -250,13 +250,12 @@ const randomNumber = (min, max) => {
 
 };
 
-
+/*
 
 const guessNum = (myChoice) => {
     return myChoice
 };
 const myChoice = Number(prompt('please enter your number between 10 to 30 : '));
-
 
 
 
@@ -273,7 +272,7 @@ const myGame = () => {
 };
 console.log(myGame());
 
-
+*/
 
 
 let friends = ['micheal', 'steven', 'peter'];
@@ -380,3 +379,24 @@ const nameKey = 'Name';
 
 console.log(ali['first' + nameKey]);
 console.log(ali['last' + nameKey]);
+
+
+const intrestedIN = prompt("What do you want to know about ali choose between fristName,lastName,age,job and friends :");
+
+
+if (ali[intrestedIN]) {
+    console.log(ali[intrestedIN]);
+
+} else {
+    console.log("Wrong request!!!choose between fristName,lastName,age,job and friends :");
+}
+
+
+ali.location = 'Canada';
+ali['secondJob'] = 'developer';
+console.log(ali);
+
+
+
+const challeng = `${ali.firstName} has ${ali.friends.length} friends , and his best friend is ${ali.friends[0]}`
+console.log(challeng)
