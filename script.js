@@ -461,4 +461,9 @@ const mark = {
     lastName: 'Miller',
     mass: 78,
     height: 1.69,
+
+    calcBMI: function() {
+        this.mass / this.height ** 2
+    }
+
 }
