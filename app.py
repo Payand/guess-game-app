@@ -50,7 +50,7 @@ def age_calc():
 
             age.append(age_years(year))
 
-            print(list(age))
+    print(age)
 
 
 age_calc()
@@ -60,7 +60,7 @@ for year in years:
 
     hello = age_years(year)
     age.append(hello)
-    print(list(age))
+print(age)
 
 
 # methods in python
@@ -108,10 +108,10 @@ print((str(ali["firstname"]) + " has " + str(len(ali.get("friends")))) +
 
 class John:
     def __init__(self, firstname, lastname, height, mass):
-        self.firstname = "John"
-        self.lastname = "Smith"
-        self.height = 1.95
-        self.mass = 150
+        self.firstname = firstname
+        self.lastname = lastname
+        self.height = height
+        self.mass = mass
 
     def bmi_calc(self):
         self.bmi = self.mass / self. height ** 2
@@ -120,11 +120,36 @@ class John:
 
 class Mark:
     def __init__(self, firstname, lastname, height, mass):
-        self.firstname = "Mark"
-        self.lastname = "Miller"
-        self.height = 1.69
-        self.mass = 78
+        self.firstname = firstname
+        self.lastname = lastname
+        self.height = height
+        self.mass = mass
 
     def bmi_calc(self):
         self.bmi = self.mass / self. height ** 2
         return self.bmi
+
+
+def summery():
+    if john_body.bmi_calc() > mark_body.bmi_calc():
+        return "John BMI " + str(john_body.bmi_calc()) + " is higher than Mark"
+    else:
+        return "Mark BMI " + str(mark_body.bmi_calc()) + " is higher than  John"
+
+
+mark_body = Mark("Mark", "Miller", 1.69, 78)
+john_body = John("John", "Smith", 1.95, 150)
+print(summery())
+
+joey = [
+    'joey',
+    'tribbiani',
+    33,
+    'actor',
+    ['Ross', 'Chandler']
+]
+list = []
+for j in joey:
+    print(j)
+    list.append(type(j))
+print(list)

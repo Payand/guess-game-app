@@ -495,3 +495,58 @@ const summery = function() {
 
 
 console.log(summery());
+
+
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`LIfting weights repetition ${rep} times`);
+}
+
+
+
+
+const joeyArray = [
+    "joey",
+    "tribbiani",
+    23,
+    "actor", ["Ross", "Chandler"]
+
+];
+const types = [];
+for (let i = 0; i < joeyArray.length; i++) {
+    console.log(joeyArray[i]);
+
+
+
+    types.push(typeof joeyArray[i]);
+}
+
+
+console.log(types);
+
+
+const year = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < year.length; i++) {
+
+    ages.push(2037 - year[i]);
+}
+
+
+console.log(ages);
+
+console.log('___ONLY STRINGS___');
+for (let i = 0; i < joeyArray.length; i++) {
+    if (typeof joeyArray[i] !== 'string') continue;
+
+    console.log(joeyArray[i], typeof joeyArray[i]);
+}
+
+
+
+for (let i = 0; i < joeyArray.length; i++) {
+    if (typeof joeyArray[i] === 'number') break;
+
+    console.log(joeyArray[i], typeof joeyArray[i]);
+}
