@@ -104,3 +104,27 @@ print(len(ali.get("friends")))
 
 print((str(ali["firstname"]) + " has " + str(len(ali.get("friends")))) +
       " best friends" + " ,and his best friend is " + str(ali.get("friends")[0]))
+
+
+class John:
+    def __init__(self, firstname, lastname, height, mass):
+        self.firstname = "John"
+        self.lastname = "Smith"
+        self.height = 1.95
+        self.mass = 150
+
+    def bmi_calc(self):
+        self.bmi = self.mass / self. height ** 2
+        return self.bmi
+
+
+class Mark:
+    def __init__(self, firstname, lastname, height, mass):
+        self.firstname = "Mark"
+        self.lastname = "Miller"
+        self.height = 1.69
+        self.mass = 78
+
+    def bmi_calc(self):
+        self.bmi = self.mass / self. height ** 2
+        return self.bmi
