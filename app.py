@@ -86,9 +86,10 @@ print("monica" in friends)
 ali = {
     'firstname': 'Ali',
     'lastname': 'Shooshtari',
-    'age': 2020 - 1989,
+    'birthyear': 2020 - 1989,
     'job': 'Hacker',
-    'friends': ['Joey', 'Ross', 'Chandler']
+    'friends': ['Joey', 'Ross', 'Chandler'],
+
 }
 print(ali)
 print(ali.keys())
