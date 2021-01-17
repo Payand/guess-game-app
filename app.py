@@ -84,7 +84,7 @@ print("monica" in friends)
 
 
 ali = {
-    'fristname': 'Ali',
+    'firstname': 'Ali',
     'lastname': 'Shooshtari',
     'age': 2020 - 1989,
     'job': 'Hacker',
@@ -96,3 +96,10 @@ print(ali.values())
 print(ali.items())
 for x in ali.values():
     print(x)
+ali['secondjob'] = "developer"
+print(ali)
+print(len(ali.get("friends")))
+
+
+print((str(ali["firstname"]) + " has " + str(len(ali.get("friends")))) +
+      " best friends" + " ,and his best friend is " + str(ali.get("friends")[0]))
