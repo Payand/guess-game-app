@@ -463,7 +463,8 @@ const mark = {
     height: 1.69,
 
     calcBMI: function() {
-        this.mass / this.height ** 2
+        const BMI = this.mass / this.height ** 2
+        return BMI
     }
 
 }
@@ -473,11 +474,24 @@ const mark = {
 const john = {
     firstName: 'John',
     lastName: 'Smith',
-    mass: 92,
+    mass: 150,
     height: 1.95,
 
     calcBMI: function() {
-        this.mass / this.height ** 2
+        const BMI = this.mass / this.height ** 2
+        return BMI
     }
 
 }
+
+
+const summery = function() {
+    if (john.calcBMI() > mark.calcBMI()) {
+        return `john's BMI (${john.calcBMI()}) is higher than mark's BMI (${mark.calcBMI()})`;
+    } else
+        return `john's BMI (${john.calcBMI()}) is lower than mark's BMI (${mark.calcBMI()})`;
+}
+
+
+
+console.log(summery());
