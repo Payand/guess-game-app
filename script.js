@@ -399,4 +399,28 @@ console.log(ali);
 
 
 const challeng = `${ali.firstName} has ${ali.friends.length} friends , and his best friend is ${ali.friends[0]}`
-console.log(challeng)
+console.log(challeng);
+
+
+
+
+
+const joey = {
+    firstName: "Joey",
+    lastName: "tribbiani",
+    birthYear: 1989,
+    friends: ["Chandler", "Ross"],
+    hasDriverLicense: true,
+    // ageCalc: function(birthYear) {
+    //     return 2037 - birthYear;
+
+    // }
+    ageClac: function() {
+        return 2037 - this.birthYear;
+    }
+};
+
+console.log(joey.ageClac());
+
+//console.log(joey.ageCalc(1991));
+//console.log(joey['ageCalc'](1991));
