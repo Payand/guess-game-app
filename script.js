@@ -409,18 +409,56 @@ const joey = {
     firstName: "Joey",
     lastName: "tribbiani",
     birthYear: 1989,
+    job: "actor",
     friends: ["Chandler", "Ross"],
     hasDriverLicense: true,
     // ageCalc: function(birthYear) {
     //     return 2037 - birthYear;
 
     // }
-    ageClac: function() {
-        return 2037 - this.birthYear;
+    //ageClac: function() {
+    //return 2037 - this.birthYear;
+    //}
+
+    ageCalc: function() {
+        this.age = 2000 - this.birthYear;
+        return this.age;
+    },
+
+
+    licenseCheck: function() {
+        if (this.age >= 18) {
+            this.hasDriverLicense === true
+            return "has a"
+        } else {
+            this.hasDriverLicense === false
+            return "does not have"
+        }
+
     }
 };
 
-console.log(joey.ageClac());
+
+
+
+
+console.log(joey.ageCalc());
+console.log(joey.age);
 
 //console.log(joey.ageCalc(1991));
 //console.log(joey['ageCalc'](1991));
+
+
+
+const pragraph = `joey is ${joey.age} old  actor , and he ${joey.licenseCheck()} a drivers license`;
+console.log(pragraph);
+
+
+
+
+const mark = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    mass: 78,
+    height: 1.69,
+}
