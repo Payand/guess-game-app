@@ -481,11 +481,24 @@ const resturant = function() {
 resturant();
 
 const resturant1 = {
-    bills: [10, 35, 66, 87, 450, 500, 862],
+    bills: [10, 45, 67, 88, 450, 500, 862],
     tips: [],
     total: [],
 
     calculation: function() {
-        for (let b = 0; b < this.bills.length; b++) {}
+        for (let b = 0; b < this.bills.length; b++) {
+            if (this.bills[b] <= 300 && this.bills[b] <= 50) {
+                const tip = this.bills[b] * 0.15;
+                this.tips.push(tip);
+                this.total.push(tip + this.bills[b]);
+            } else {
+                const tip = this.bills[b] * 0.2;
+                this.tips.push(tip);
+                this.total.push(tip + this.bills[b]);
+            }
+        }
+        console.log(this.tips, this.total);
     },
 };
+
+resturant1.calculation();
