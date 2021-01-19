@@ -423,7 +423,7 @@ while (dice !== 6) {
     dice = Math.trunc(Math.random() * 6) + 1;
     if (dice === 6) console.log("you rolled 6");
 }
-
+/*
 const calcPeopleBills = function(peopleBills) {
     return peopleBills >= 50 && peopleBills <= 30 ?
         peopleBills * 0.15 :
@@ -441,19 +441,19 @@ for (let b = 0; b < peopleBills.length; b++) {
 }
 
 console.log(peopleBills, total, peopleTip);
-
-const peopleBillsTwo = [30, 33, 44, 55, 12, 60, 999, 1000, 500, 45, 68];
+*/
+const peopleBillsTwo = [30, 35, 44, 55, 15, 60, 999, 1000, 500, 45, 68];
 const tipPeople = [];
 const totalTipAndBills = [];
 
-const returant = function() {
+const resturant = function() {
     for (let b = 0; b < peopleBillsTwo.length; b++) {
-        if (peopleBillsTw(b) >= 300) {
-            const tipCal = peopleBillsTwo(b) * 0.2;
-            return tipCal;
-        } else {
-            const tipCalTwo = peopleBillsTwo(b) * 0.15;
-            return tipCalTwo;
-        }
+        const tipps =
+            peopleBillsTwo[b] >= 50 && peopleBillsTwo[b] <= 300 ?
+            peopleBillsTwo[b] * 0.15 :
+            peopleBillsTwo[b] * 0.2;
+        tipPeople.push(tipps);
     }
+    return tipPeople;
 };
+console.log(resturant());
