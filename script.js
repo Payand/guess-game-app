@@ -267,7 +267,7 @@ const nameKey = "Name";
 
 console.log(ali["first" + nameKey]);
 console.log(ali["last" + nameKey]);
-
+/*
 const intrestedIN = prompt(
     "What do you want to know about ali choose between fristName,lastName,age,job and friends :"
 );
@@ -286,7 +286,7 @@ console.log(ali);
 
 const challeng = `${ali.firstName} has ${ali.friends.length} friends , and his best friend is ${ali.friends[0]}`;
 console.log(challeng);
-
+*/
 const joey = {
     firstName: "Joey",
     lastName: "tribbiani",
@@ -441,3 +441,13 @@ for (let b = 0; b < peopleBills.length; b++) {
 }
 
 console.log(peopleBills, total, peopleTip);
+
+console.log("hello guys this was a test");
+console.log("live server test");
+console.log("number 10 is awsome");
+
+const numberOne = 60;
+const numberTwo = 20;
+
+const additionalNumbers = numberOne + numberTwo;
+console.log(additionalNumbers);
