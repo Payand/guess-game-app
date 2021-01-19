@@ -442,12 +442,18 @@ for (let b = 0; b < peopleBills.length; b++) {
 
 console.log(peopleBills, total, peopleTip);
 
-console.log("hello guys this was a test");
-console.log("live server test");
-console.log("number 10 is awsome");
+const peopleBillsTwo = [30, 33, 44, 55, 12, 60, 999, 1000, 500, 45, 68];
+const tipPeople = [];
+const totalTipAndBills = [];
 
-const numberOne = 60;
-const numberTwo = 20;
-
-const additionalNumbers = numberOne + numberTwo;
-console.log(additionalNumbers);
+const returant = function() {
+    for (let b = 0; b < peopleBillsTwo.length; b++) {
+        if (peopleBillsTw(b) >= 300) {
+            const tipCal = peopleBillsTwo(b) * 0.2;
+            return tipCal;
+        } else {
+            const tipCalTwo = peopleBillsTwo(b) * 0.15;
+            return tipCalTwo;
+        }
+    }
+};
