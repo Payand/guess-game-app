@@ -1,6 +1,6 @@
 import random
 
-'''
+"""
 def random_number():
     comp_number = random.randrange(0, 20)
     return comp_number
@@ -24,7 +24,8 @@ def game_rational():
 
 
 print(game_rational())
-'''
+
+
 # list-methods
 list_names = ['micheal', 'steven', 'peter']
 
@@ -136,10 +137,10 @@ def summery():
     else:
         return "Mark BMI " + str(mark_body.bmi_calc()) + " is higher than  John"
 
-
 mark_body = Mark("Mark", "Miller", 1.69, 78)
 john_body = John("John", "Smith", 1.95, 150)
 print(summery())
+
 
 joey = [
     'joey',
@@ -161,6 +162,24 @@ list2 = [2, 3, 5]
 for i in list2:
     i = i + i
 print(i)
+"""
+# this is a bill and tip calculations
+def costomer_input():
+    x = 0
+    bills = []
+    while  x != 10 :
+    
+        
+        input_bills = input("please enter your number :")
+        x +=1
+        
+        bills.append(input_bills)
+    print(bills)
 
+costomer_input()    
+        
 
+   
+   
+    
 
