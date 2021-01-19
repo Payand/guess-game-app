@@ -446,7 +446,7 @@ console.log(peopleBills, total, peopleTip);
 const peopleBillsTwo = [30, 35, 44, 55, 15, 60, 999, 1000, 500, 45, 68];
 const tipPeople = [];
 const totalTipAndBills = [];
-
+/*
 const resturant = function() {
     for (let b = 0; b < peopleBillsTwo.length; b++) {
         const tipps =
@@ -461,3 +461,31 @@ const resturant = function() {
 };
 resturant();
 console.log(`actual bills [${peopleBillsTwo}]`);
+*/
+
+const resturant = function() {
+    for (let b = 0; b < peopleBillsTwo.length; b++) {
+        if (peopleBillsTwo[b] >= 300) {
+            const tips = peopleBillsTwo[b] * 0.2;
+            tipPeople.push(tips);
+            totalTipAndBills.push(tips + peopleBillsTwo[b]);
+        } else if (peopleBillsTwo[b] < 50) {
+            const tips = peopleBillsTwo[b] * 0.15;
+            tipPeople.push(tips);
+            totalTipAndBills.push(tips + peopleBillsTwo[b]);
+        }
+    }
+
+    console.log(tipPeople, totalTipAndBills);
+};
+resturant();
+
+const resturant1 = {
+    bills: [10, 35, 66, 87, 450, 500, 862],
+    tips: [],
+    total: [],
+
+    calculation: function() {
+        for (let b = 0; b < this.bills.length; b++) {}
+    },
+};
