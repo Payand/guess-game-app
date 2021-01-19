@@ -243,6 +243,7 @@ const clacTipTwo = function(bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
 
+/*
 const bills = [125, 555, 44];
 let tips = [];
 const tipArray1 = clacTipTwo(bills[0]);
@@ -251,7 +252,7 @@ const tipArray3 = clacTipTwo(bills[2]);
 
 tips.push(tipArray1 + bills[0], tipArray2 + bills[1], tipArray3 + bills[2]);
 console.log(tips);
-
+*/
 const ali = {
     firstName: "Ali",
     lastName: "Shooshtari",
@@ -453,7 +454,10 @@ const resturant = function() {
             peopleBillsTwo[b] * 0.15 :
             peopleBillsTwo[b] * 0.2;
         tipPeople.push(tipps);
+        totalTipAndBills.push(tipps + peopleBillsTwo[b]);
     }
-    return tipPeople;
+    console.log(tipPeople);
+    console.log(totalTipAndBills);
 };
-console.log(resturant());
+resturant();
+console.log(peopleBillsTwo);
