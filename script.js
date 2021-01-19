@@ -456,8 +456,8 @@ const resturant = function() {
         tipPeople.push(tipps);
         totalTipAndBills.push(tipps + peopleBillsTwo[b]);
     }
-    console.log(tipPeople);
-    console.log(totalTipAndBills);
+    console.log(` tips [${tipPeople}]`);
+    console.log(`sum up of tips and bills [${totalTipAndBills}]`);
 };
 resturant();
-console.log(peopleBillsTwo);
+console.log(`actual bills [${peopleBillsTwo}]`);
