@@ -164,22 +164,73 @@ for i in list2:
 print(i)
 """
 # this is a bill and tip calculations
-def costomer_input():
-    x = 0
-    bills = []
-    while  x != 10 :
+
+class Employee:
+    pass
+
+
+
+
+    
+
+        
+        
+        
+        
+
+            
+       
+                    
+        
+
+    
+    
+ 
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+       
+       
+"""  
+x = 0
+bills = []
+tipping_jar=[]
+while  x != 4 :
     
         
-        input_bills = input("please enter your number :")
-        x +=1
+    input_bills = int(input("please enter your number :"))
+    x +=1
         
-        bills.append(input_bills)
-    print(bills)
-
-costomer_input()    
-        
-
-   
-   
+    bills.append(input_bills)   
     
+
+
+for bill in bills:
+    if bill <= 300:
+        people_bill=bill * 0.15
+        tipping_jar.append(people_bill)
+    else:
+        people_bill1 = bill * 0.2
+        tipping_jar.append(people_bill1)
+    
+print(tipping_jar)    
+    
+"""        
+                    
+
+
+
+
+
 
