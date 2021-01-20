@@ -165,9 +165,43 @@ print(i)
 """
 # this is a bill and tip calculations
 
-class Employee:
-    pass
+class Bills:
+    def __init__(self, money):
+        self.money = money
+        
 
+        
+    def list_maker(self):
+        return self.money
+        
+    
+    def list_tips(self):
+       if self.money > 100:
+           return self.money * 0.2
+           
+            
+                 
+    
+    
+def input_number():
+    count = 0
+    people_bills_list = [ ]
+    people_tips_list = []
+    people_total_list = []
+    while count != 4:
+        people_bills= Bills(int(input("enter your number : ")))
+        count += 1
+        people_bills_list.append(people_bills.list_maker())
+        people_tips_list.append(people_bills.list_tips())
+        people_total_list.append(people_bills.list_maker() + people_bills.list_tips())
+    print(people_bills_list)
+    print(people_tips_list)
+    print(people_total_list)
+
+input_number()    
+            
+        
+        
 
 
 
