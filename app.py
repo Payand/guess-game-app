@@ -185,18 +185,20 @@ class Bills:
     
 def input_number():
     count = 0
+    customer = int(input("How many customers do you have : "))
     people_bills_list = [ ]
     people_tips_list = []
     people_total_list = []
-    while count != 4:
-        people_bills= Bills(int(input("enter your number : ")))
+    while count != customer:
+        people_bills= Bills(int(input("enter customer's bill : ")))
         count += 1
         people_bills_list.append(people_bills.list_maker())
         people_tips_list.append(people_bills.list_tips())
         people_total_list.append(people_bills.list_maker() + people_bills.list_tips())
-    print(people_bills_list)
-    print(people_tips_list)
-    print(people_total_list)
+    print()    
+    print("list of Bills " + str(people_bills_list))
+    print("List of tips" + people_tips_list)
+    print("List of totals" +people_total_list)
 
 input_number()    
             
