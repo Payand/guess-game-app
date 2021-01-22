@@ -9,66 +9,86 @@ document.querySelector('.score').textContent = 10;
 
 document.querySelector('.guess').value = 10;
 */
+
+// random number generator
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 let score = 20;
 let highScore = 0;
+//put document query textcontent inside function ,class name massage on HTML.
+const massageDisplay = function(massage) {
+    document.querySelector('.message').textContent = massage;
+};
+//put document query style inside function ,body tag on HTML and CSS.
+const bodyDisplay = function(body) {
+    document.querySelector('body').style.backgroundColor = body;
+};
+//put document query style inside function, class name number on HTML and CSS.
+const numberStyle = function(number) {
+    document.querySelector('.number').style.width = number;
+};
+//put document query textContent inside function, class name number on HTML and CSS.
+const numberTextContent = function(number) {
+    document.querySelector('.number').textContent = number;
+};
 
+// define a event handler (click).
 document.querySelector('.check').addEventListener('click', function() {
     const guess = Number(document.querySelector('.guess').value);
 
-    // no number in input box
+    // no number in input box.
     if (!guess) {
-        document.querySelector('.message').textContent = 'NO input Number!!!';
+        massageDisplay('No input Number ?????');
         document.querySelector('body').style.backgroundColor = '#FF6347';
-        // when player wins
+
+        // when player wins.
     } else if (guess === secretNumber) {
-        document.querySelector('.message').textContent = 'you Guess right ';
-        document.querySelector('body').style.backgroundColor = '#60b347';
-        document.querySelector('.number').style.width = '30rem';
-        document.querySelector('.number').textContent = secretNumber;
+        massageDisplay('you Guess right ');
+        bodyDisplay('#60b347');
+        numberStyle('30rem');
+        numberTextContent(secretNumber);
 
         if (score > highScore) {
             highScore = score;
             document.querySelector('.highscore').textContent = highScore;
         }
-
-        // when guess too high
-    } else if (guess > secretNumber) {
+        // when guess too high or low and highscore.
+        // body color changes if you guess high or low.
+        //you can uncomment line 59 to 61 and commentout line 51 to 57.
+        // in line 59 to 61 ternery function hase been implemented.
+    } else if (guess !== secretNumber) {
         if (score > 0) {
-            document.querySelector('body').style.backgroundColor = '#bfefff';
-            document.querySelector('main').style.color = 'Black';
-            document.querySelector('body').style.color = 'Black';
+            if (guess > secretNumber) {
+                massageDisplay('you Guess High!!!!');
+                bodyDisplay('#87ceeb');
+            } else {
+                massageDisplay('you guess low!!!!');
+                bodyDisplay('#9b7653');
+            }
 
-            document.querySelector('.message').textContent = 'you Guess High';
+            //guess > secretNumber ?
+            //massageDisplay('you Guess High!!!') :
+            // massageDisplay('you guess low !!!!');
+
             score--;
             document.querySelector('.score').textContent = score;
+            // print out message display when you are out of guesses.
+            // change display of body to red when you are out of guesses.
         } else {
-            document.querySelector('.message').textContent = 'you lost the game!!!';
-            document.querySelector('body').style.backgroundColor = '#FF0000';
-        }
-        // when guess to low
-    } else if (guess < secretNumber) {
-        if (score > 0) {
-            document.querySelector('body').style.backgroundColor = '#A52A2A';
-            document.querySelector('.message').textContent = 'you Guess low';
-            score--;
-            document.querySelector('.score').textContent = score;
-        } else {
-            document.querySelector('.message').textContent = 'you lost the game!!!';
-            document.querySelector('body').style.backgroundColor = '#FF0000';
+            massageDisplay('you are out of guess!!!');
+            bodyDisplay('#FF0000');
         }
     }
 });
 // reset game.
 document.querySelector('.again').addEventListener('click', function() {
-    document.querySelector('body').style.backgroundColor = '#222';
-    document.querySelector('.number').style.width = '15rem';
-    document.querySelector('.message').textContent = 'Start guessing...';
+    bodyDisplay('#222');
+    numberStyle('15rem');
+    massageDisplay('Start guessing...');
 
     document.querySelector('.guess').value = '';
     document.querySelector('.score').textContent = 20;
-    document.querySelector('.number').textContent = '?';
+    numberTextContent('?');
 
     secretNumber = Math.trunc(Math.random() * 20) + 1;
 });
