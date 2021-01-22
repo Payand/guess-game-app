@@ -20,6 +20,7 @@ document.querySelector('.check').addEventListener('click', function() {
     // no number in input box
     if (!guess) {
         document.querySelector('.message').textContent = 'NO number input!!!';
+        document.querySelector('body').style.backgroundColor = '#FF6347';
         // when player wins
     } else if (guess === secretNumber) {
         document.querySelector('.message').textContent = 'you Guess right ';
@@ -35,26 +36,31 @@ document.querySelector('.check').addEventListener('click', function() {
         // when guess too high
     } else if (guess > secretNumber) {
         if (score > 0) {
+            document.querySelector('body').style.backgroundColor = '#bfefff';
+            document.querySelector('main').style.color = 'Black';
+            document.querySelector('body').style.color = 'Black';
+
             document.querySelector('.message').textContent = 'you Guess High';
             score--;
             document.querySelector('.score').textContent = score;
         } else {
             document.querySelector('.message').textContent = 'you lost the game!!!';
-            document.querySelector('body').style.backgroundColor = 'red';
+            document.querySelector('body').style.backgroundColor = '#FF0000';
         }
         // when guess to low
     } else if (guess < secretNumber) {
         if (score > 0) {
+            document.querySelector('body').style.backgroundColor = '#A52A2A';
             document.querySelector('.message').textContent = 'you Guess low';
             score--;
             document.querySelector('.score').textContent = score;
         } else {
             document.querySelector('.message').textContent = 'you lost the game!!!';
-            document.querySelector('body').style.backgroundColor = 'red';
+            document.querySelector('body').style.backgroundColor = '#FF0000';
         }
     }
 });
-
+// reset game.
 document.querySelector('.again').addEventListener('click', function() {
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.width = '15rem';
