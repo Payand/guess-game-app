@@ -199,7 +199,7 @@ def input_number():
     print("list of Bills " + str(people_bills_list))
     print("List of tips" + people_tips_list)
     print("List of totals" +people_total_list)
-
+    
 input_number()    
             
         

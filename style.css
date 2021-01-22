@@ -123,6 +123,7 @@ h1 {
 @keyframes colorful {
     0% {
         color: black;
+        font-size: 10px;
     }
     10% {
         color: red;
@@ -135,11 +136,16 @@ h1 {
     }
     40% {
         color: tomato;
+        font-size: 20px;
     }
     60% {
         color: aqua;
     }
     80% {
         color: cyan;
+    }
+    100% {
+        color: darkslategray;
+        font-size: 23px;
     }
 }

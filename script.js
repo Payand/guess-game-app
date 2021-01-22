@@ -19,7 +19,7 @@ document.querySelector('.check').addEventListener('click', function() {
 
     // no number in input box
     if (!guess) {
-        document.querySelector('.message').textContent = 'NO number input!!!';
+        document.querySelector('.message').textContent = 'NO input Number!!!';
         document.querySelector('body').style.backgroundColor = '#FF6347';
         // when player wins
     } else if (guess === secretNumber) {
