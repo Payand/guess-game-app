@@ -57,6 +57,17 @@ h1 {
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation-name: guessnumber;
+    animation-duration: 5s;
+    animation-iteration-count: 6;
+}
+
+@keyframes guessnumber {
+    0% {
+        opacity: 0;
+        transform: translate(-52%, -50%);
+        color: brown;
+    }
 }
 
 .number {
@@ -116,7 +127,7 @@ h1 {
     margin-bottom: 8rem;
     height: 3rem;
     animation-name: colorful;
-    animation-duration: 10s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
@@ -148,4 +159,10 @@ h1 {
         color: darkslategray;
         font-size: 23px;
     }
+}
+
+.highscore {
+    animation-name: scorebit;
+    animation-duration: 1ms;
+    animation-iteration-count: infinite;
 }
