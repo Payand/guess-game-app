@@ -104,6 +104,20 @@ h1 {
     position: absolute;
     top: 2rem;
     right: 2rem;
+    animation-name: between;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes between {
+    0% {
+        font-size: 1.4rem;
+    }
+    50% {
+        font-size: 3rem;
+        transform: translate(-600px, 300px);
+        color: yellow;
+    }
 }
 
 .again {
