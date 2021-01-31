@@ -85,9 +85,9 @@ document.querySelector('.again').addEventListener('click', function() {
     bodyDisplay('#222');
     numberStyle('15rem');
     massageDisplay('Start guessing...');
-
+    score = 20;
     document.querySelector('.guess').value = '';
-    document.querySelector('.score').textContent = 20;
+    document.querySelector('.score').textContent = score;
     numberTextContent('?');
 
     secretNumber = Math.trunc(Math.random() * 20) + 1;
