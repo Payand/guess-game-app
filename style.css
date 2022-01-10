@@ -139,7 +139,6 @@ h1 {
     }
     50% {
         font-size: 3rem;
-        transform: translate(-600px, 300px);
         color: yellow;
     }
 }

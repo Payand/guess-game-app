@@ -1,0 +1,23 @@
+{
+  "name": "guess-games",
+  "version": "1.0.0",
+  "description": "1.you can find style sheet and HTML and JS file",
+  "default": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build":"parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ali-ilA/first-page.git"
+  },
+  "author": "Ali shooshtari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ali-ilA/first-page/issues"
+  },
+  "homepage": "https://github.com/Ali-ilA/first-page#readme",
+  "devDependencies": {
+    "parcel": "^2.1.1"
+  }
+}
